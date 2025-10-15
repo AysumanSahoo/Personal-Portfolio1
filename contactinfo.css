@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f6fa;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px 16px;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+    position: flex;
+    top: 0%;
+    width: 100%;
+
+}
+
+nav ul li {
+    margin: 0 5px;
+
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+    font-weight: 500;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    font-weight: 600;
+    font-size: 18px;
+    margin-inline: 20px;
+    color: #777;
+}
+
+ul li a:hover {
+    color: rgb(204, 203, 203);
+
+
+}
+
+.core h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+.contact-info {
+    max-width: 600px;
+
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    margin-left: 90px;
+    margin-top: 50px;
+
+}
+
+
+
+.contact-info h2 {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0 15px 0;
+    line-height: 1.5;
+}
+
+.contactme {
+    max-width: 600px;
+
+    padding: 20px;
+    padding-bottom: 4%;
+
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: absolute;
+    margin-top: 10%;
+    top: 50px;
+    right: 50px;
+
+
+}
+
+.contactme .column1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contactme .column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contactme .column3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contactme .column4 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+
+.contactme input {
+    width: 48cap;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contactme textarea {
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+
+    resize: vertical;
+    height: 100px;
+    width: 54cap;
+}
+
+.contactme label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 20px;
+}
+
+.hero .button {
+    width: 160px;
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d4d2d2;
+    margin-left: 35%;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+
+}
+
+.hero .button:hover {
+    background-color: #e7e6e6;
+    cursor: pointer;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.contactme {
+    animation: slideIn 1s ease-out;
+}
+
+
+
+.footer {
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    padding: 20px 0;
+    color: #777;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+
+}
+
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    .contact-info,
+    .contactme {
+        max-width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        position: static;
+        right: auto;
+        top: auto;
+    }
+
+    .contactme input,
+    .contactme textarea {
+        width: 100%;
+    }
+
+    .hero .button {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Tablet (601px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    nav {
+        flex-direction: row;
+        padding: 12px;
+    }
+
+    .contact-info,
+    .contactme {
+        max-width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        position: static;
+        right: auto;
+        top: auto;
+    }
+
+    .contactme input,
+    .contactme textarea {
+        width: 100%;
+    }
+
+    .hero .button {
+        margin-left: 0;
+        width: 60%;
+    }
+}
+
+/* Laptop/Desktop (min-width: 901px) */
+@media (min-width: 901px) {
+    .contact-info {
+        margin-left: 90px;
+        margin-top: 50px;
+        max-width: 600px;
+    }
+
+    .contactme {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        max-width: 600px;
+    }
+
+    .contactme input {
+        width: 48cap;
+    }
+
+    .contactme textarea {
+        width: 54cap;
+    }
+
+    .hero .button {
+        margin-left: 35%;
+        width: 160px;
+    }
+}

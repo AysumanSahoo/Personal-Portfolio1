@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f6fa;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px 16px;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+    position: flex;
+    top: 0%;
+    width: 100%;
+
+}
+
+nav ul li {
+    margin: 0 5px;
+
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+    font-weight: 500;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    font-weight: 600;
+    font-size: 18px;
+    margin-inline: 20px;
+    color: #777;
+}
+
+ul li a:hover {
+    color: rgb(204, 203, 203);
+
+
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f7f6f6;
+    height: 640px;
+    width: 102.2%;
+}
+
+.maintext h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.maintext .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dfdfdf;
+    color: #000000;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.maintext h2 {
+    font-size: 24px;
+    color: #555;
+}
+
+.maintext h4 {
+    font-size: 20px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.main img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    border: 5px solid #fff;
+    background-color: #fff;
+    transition: transform 0.3s;
+
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+img {
+    animation: slideInUp 0.8s ease-out;
+}
+
+.footer {
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    padding: 20px 0;
+    color: #777;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+
+}
